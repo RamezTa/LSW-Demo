@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Hunter Hat
   price: 0
   type: 2
-  sprite: {fileID: 21300000, guid: c2d3ff617fbb42c3a588fc7c49787ce1, type: 3}
+  sprite: {fileID: 21300000, guid: aa418ac77c9d4970b2f60a2d4ef27f73, type: 3}

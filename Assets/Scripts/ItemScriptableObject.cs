@@ -20,4 +20,8 @@ public class ItemScriptableObject : ScriptableObject, IItem
     {
         return sprite;
     }
+    public ItemTypeSO GetType ()
+    {
+        return type;
+    }
 }

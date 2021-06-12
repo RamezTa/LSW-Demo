@@ -40,24 +40,31 @@ public class CharacterCustomization : MonoBehaviour
             ChangeOutfit(Outfits[1]);
             ChangeHat(hats[1]);
             ChangeSheild(shields[1]);
+            ChangeWeapon(weapons[1]);
+
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             ChangeOutfit(Outfits[2]);
             ChangeHat(hats[2]);
             ChangeSheild(shields[2]);
+            ChangeWeapon(weapons[2]);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ChangeOutfit(Outfits[3]);
             ChangeHat(hats[3]);
             ChangeSheild(shields[3]);
+            ChangeWeapon(weapons[3]);
+
         }
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             ChangeOutfit(Outfits[0]);
             ChangeHat(hats[0]);
             ChangeSheild(shields[0]);
+            ChangeWeapon(weapons[0]);
+
         }
         if (hat.sprite == null)
             hair.enabled = true;

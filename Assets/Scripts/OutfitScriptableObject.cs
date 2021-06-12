@@ -33,4 +33,8 @@ public class OutfitScriptableObject : ScriptableObject, IItem
     {
         return trose;
     }
+    public ItemTypeSO GetType ()
+    {
+        return type;
+    }
 }

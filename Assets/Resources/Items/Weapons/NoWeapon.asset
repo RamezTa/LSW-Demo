@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c598692c9b288ce44910bae343a4a136, type: 3}
   m_Name: NoWeapon
   m_EditorClassIdentifier: 
-  itemName: Rusty Sword
+  itemName: Default
   price: 0
   type: 4
-  sprite: {fileID: 21300000, guid: ca95a726b76e42bea3d3b186e4063a39, type: 3}
+  sprite: {fileID: 0}
