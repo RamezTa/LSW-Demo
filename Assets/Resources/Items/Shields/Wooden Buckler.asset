@@ -15,4 +15,5 @@ MonoBehaviour:
   itemName: Wooden Buckler
   price: 0
   type: 3
-  sprite: {fileID: 21300000, guid: 22c72a2b4cd9429fa0af8e0aad1753b1, type: 3}
+  sprite: {fileID: 21300000, guid: a07c5229371041ce901362bef4e0d1c5, type: 3}
+  icon: {fileID: 21300000, guid: 22c72a2b4cd9429fa0af8e0aad1753b1, type: 3}

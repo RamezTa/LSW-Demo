@@ -7,6 +7,7 @@ public class ItemScriptableObject : ScriptableObject, IItem
     public int price;
     public ItemTypeSO type;
     public Sprite sprite;
+    public Sprite icon;
 
     public string GetName ()
     {
