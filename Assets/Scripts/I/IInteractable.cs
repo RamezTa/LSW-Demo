@@ -1,6 +1,5 @@
-using UnityEngine;
 
-interface IInteractable 
+public interface IInteractable 
 {
     void SetHighted( bool x );
 

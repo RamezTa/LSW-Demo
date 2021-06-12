@@ -15,7 +15,15 @@ MonoBehaviour:
   name: Assassin
   price: 0
   type: 1
-  vest: {fileID: 21300000, guid: e83128d56b334879b705cc4e6b056d32, type: 3}
-  boots: {fileID: 21300000, guid: 26de664c6a05edd4ea65144d7e0529f4, type: 3}
-  pauldrons: {fileID: 21300000, guid: 1ea760b3d74696649a1097b3686de129, type: 3}
-  gloves: {fileID: 21300000, guid: 7fdeec206a934ae4ca5f19b0e482fc57, type: 3}
+  armL: {fileID: 21300004, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  armR: {fileID: 21300002, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  finger: {fileID: 21300022, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  forearmL: {fileID: 21300010, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  forearmR: {fileID: 21300008, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  handL: {fileID: 21300016, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  handR: {fileID: 21300018, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  leg: {fileID: 21300012, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  plevis: {fileID: 21300006, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  shin: {fileID: 21300014, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  sleeveR: {fileID: 21300020, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}
+  trose: {fileID: 21300000, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c598692c9b288ce44910bae343a4a136, type: 3}
   m_Name: FireWand
   m_EditorClassIdentifier: 
-  itemName: Deserter Dagger
+  itemName: Fire Wand
   price: 0
   type: 4
-  sprite: {fileID: 21300000, guid: 609e3c7a3b514a6c95b81e0048d15b48, type: 3}
+  sprite: {fileID: 21300000, guid: c8f23b0b52a44379a69231839bf38277, type: 3}

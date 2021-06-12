@@ -5,7 +5,10 @@ public class InventoryItem : MonoBehaviour
 {
 
     [SerializeField] Image icon;
-    [SerializeField] Sprite defultIcon;
+
+    [SerializeField] Sprite defaultIcon;
+    [SerializeField] Color defaultIconColor;
+    [SerializeField] Color ShownColor;
     
     [SerializeField] Text count;
 
@@ -15,9 +18,19 @@ public class InventoryItem : MonoBehaviour
 
     [Space]
 
-    [SerializeField] ItemScriptableObject itemSO;
+    [SerializeField] IItem item;
 
-    
+
+    public void SetSelected( bool x )
+    {
+        selectedFram.SetActive(x);
+    }
+
+    public void SetItem( IItem i, bool showPirce = false )
+    {
+
+    }
+
 
 
 }

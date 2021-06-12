@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e38bd44b6ea5b4f840b55b2ffe7ad7, type: 3}
+  m_Name: DefaultRobe
+  m_EditorClassIdentifier: 
+  name: Default Robe
+  price: 0
+  type: 1
+  armL: {fileID: 21300024, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  armR: {fileID: 21300022, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  finger: {fileID: 21300040, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  forearmL: {fileID: 21300028, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  forearmR: {fileID: 21300026, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  handL: {fileID: 21300034, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  handR: {fileID: 21300036, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  leg: {fileID: 21300030, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  plevis: {fileID: 21300006, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  shin: {fileID: 21300032, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  sleeveR: {fileID: 21300038, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}
+  trose: {fileID: 21300000, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}

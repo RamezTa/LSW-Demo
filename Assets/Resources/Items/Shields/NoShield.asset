@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c598692c9b288ce44910bae343a4a136, type: 3}
-  m_Name: Hood
+  m_Name: NoShield
   m_EditorClassIdentifier: 
-  itemName: Hood
+  itemName: Default
   price: 0
-  type: 2
-  sprite: {fileID: 21300000, guid: 8cd9243134834bc39a16389caf20b75b, type: 3}
+  type: 3
+  sprite: {fileID: 0}
