@@ -19,6 +19,7 @@ public class OutfitScriptableObject : ScriptableObject, IItem
     public Sprite shin;
     public Sprite sleeveR;
     public Sprite trose;
+    public Sprite icon;
 
 
     public string GetName ()
@@ -31,7 +32,7 @@ public class OutfitScriptableObject : ScriptableObject, IItem
     }
     public Sprite GetIcon ()
     {
-        return trose;
+        return icon;
     }
     public ItemTypeSO GetType ()
     {

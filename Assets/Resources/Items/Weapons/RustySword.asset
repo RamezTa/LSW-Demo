@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Rusty Sword
   price: 0
   type: 4
-  sprite: {fileID: 21300000, guid: ca95a726b76e42bea3d3b186e4063a39, type: 3}
+  sprite: {fileID: 21300000, guid: bdfc040725dc484d85ac394de628eb55, type: 3}

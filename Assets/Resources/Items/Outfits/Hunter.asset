@@ -27,3 +27,4 @@ MonoBehaviour:
   shin: {fileID: 21300032, guid: c160da3cdabb4baa9db49e93577b5af8, type: 3}
   sleeveR: {fileID: 21300038, guid: c160da3cdabb4baa9db49e93577b5af8, type: 3}
   trose: {fileID: 21300000, guid: c160da3cdabb4baa9db49e93577b5af8, type: 3}
+  icon: {fileID: 21300000, guid: f7f535ee07364b2ea91650d0e900e309, type: 3}
