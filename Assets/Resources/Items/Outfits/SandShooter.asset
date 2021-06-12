@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SandShooter
   m_EditorClassIdentifier: 
   name: Sand Shooter
+  id: 8
   price: 0
   type: 1
   armL: {fileID: 21300004, guid: c6442858735d49669fbc0abc940bef69, type: 3}

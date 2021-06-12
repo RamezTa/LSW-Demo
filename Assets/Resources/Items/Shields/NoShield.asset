@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: NoShield
   m_EditorClassIdentifier: 
   itemName: Default
+  id: 11
   price: 0
   type: 3
   sprite: {fileID: 0}
+  icon: {fileID: 0}

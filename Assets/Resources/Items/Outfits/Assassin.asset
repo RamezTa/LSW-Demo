@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Assassin
   m_EditorClassIdentifier: 
   name: Assassin
+  id: 5
   price: 0
   type: 1
   armL: {fileID: 21300004, guid: 4dda57fbc2bf4ef18678abd94ca93a0f, type: 3}

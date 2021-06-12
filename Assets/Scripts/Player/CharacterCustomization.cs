@@ -41,7 +41,6 @@ public class CharacterCustomization : MonoBehaviour
             ChangeHat(hats[1]);
             ChangeSheild(shields[1]);
             ChangeWeapon(weapons[1]);
-
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
@@ -56,7 +55,6 @@ public class CharacterCustomization : MonoBehaviour
             ChangeHat(hats[3]);
             ChangeSheild(shields[3]);
             ChangeWeapon(weapons[3]);
-
         }
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
@@ -64,7 +62,6 @@ public class CharacterCustomization : MonoBehaviour
             ChangeHat(hats[0]);
             ChangeSheild(shields[0]);
             ChangeWeapon(weapons[0]);
-
         }
         if (hat.sprite == null)
             hair.enabled = true;

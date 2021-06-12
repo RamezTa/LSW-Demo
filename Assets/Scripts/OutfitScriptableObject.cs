@@ -1,9 +1,10 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "OutfitData", menuName = "ScriptableObjects/New Outfit", order = 1)]
-public class OutfitScriptableObject : ScriptableObject, IItem
+public class OutfitScriptableObject : ScriptableObject // , IItem
 {
     public string name;
+    public int id;
     public int price;
     public ItemTypeSO type;
 

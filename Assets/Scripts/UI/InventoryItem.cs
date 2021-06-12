@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class InventoryItem : MonoBehaviour
 {
+    public int itemID;
+    public Button button;
 
     [SerializeField] Image icon;
 
@@ -16,19 +18,32 @@ public class InventoryItem : MonoBehaviour
     [SerializeField] GameObject selectedFram;
     [SerializeField] bool isSelected;
 
-    [Space]
-
-    [SerializeField] IItem item;
-
-
+    
     public void SetSelected( bool x )
     {
         selectedFram.SetActive(x);
     }
 
-    public void SetItem( IItem i, bool showPirce = false )
+    public void SetItem( int itemId, bool showPirce = false, int pirce = 0 )
     {
+        itemID = itemId;
 
+        Sprite iconSprite = ItemsLoader.GetIconOf( itemID );
+
+        // defaut weapon / sheild / helmet are empty
+        if( iconSprite == null )
+        {
+            icon.sprite = defaultIcon;
+            icon.color = defaultIconColor;
+        }
+        else
+        {
+            icon.sprite = iconSprite;
+            icon.color = ShownColor;
+        }
+
+        count.gameObject.SetActive( showPirce );
+        count.text = pirce.ToString();
     }
 
 

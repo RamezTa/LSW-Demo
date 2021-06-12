@@ -5176,9 +5176,10 @@ GameObject:
   - component: {fileID: 2006240390}
   - component: {fileID: 8340663607088005263}
   - component: {fileID: 6005723428421536176}
+  - component: {fileID: 2031164738565673003}
+  - component: {fileID: 1675708777}
   - component: {fileID: 2854392704461929106}
   - component: {fileID: 2950398211560032950}
-  - component: {fileID: 1675708777}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -5213,6 +5214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b29e5c0b554f68449f8489d2c6b2df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayingSFX: 0
   movementSpeed: 5
   movementDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &8340663607088005263
@@ -5245,43 +5247,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 95570844872250018}
   body: {fileID: 4744287895581962}
---- !u!58 &2854392704461929106
-CircleCollider2D:
+--- !u!114 &2031164738565673003
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109987028385428}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.44}
-  serializedVersion: 2
-  m_Radius: 0.7
---- !u!50 &2950398211560032950
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109987028385428}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 2
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f978c90dde60947946628e043c2830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryPanel: {fileID: 0}
+  currentOutfit: {fileID: 11400000, guid: 5c04edcd56ac6504a839bcfd539bf8c8, type: 2}
+  currentHelmet: {fileID: 11400000, guid: 9c5da458d9ebc2a4b890a01b3652a644, type: 2}
+  currentWeapon: {fileID: 11400000, guid: a599b5240ad287c43a6e75ce8ba9fa83, type: 2}
+  currentShield: {fileID: 11400000, guid: 73f5be199e9275348b1616ed90595851, type: 2}
+  defaultOutfit: {fileID: 11400000, guid: 5c04edcd56ac6504a839bcfd539bf8c8, type: 2}
+  defaultHelmet: {fileID: 11400000, guid: 9c5da458d9ebc2a4b890a01b3652a644, type: 2}
+  defaultWeapon: {fileID: 11400000, guid: a599b5240ad287c43a6e75ce8ba9fa83, type: 2}
+  defaultShield: {fileID: 11400000, guid: 73f5be199e9275348b1616ed90595851, type: 2}
+  inventoryOutfits:
+  - {fileID: 11400000, guid: 8c8a3a06ff19460499da8bdac204485a, type: 2}
+  - {fileID: 11400000, guid: 549685ed1b68799438f9cb0e973fd117, type: 2}
+  inventoryItems:
+  - {fileID: 11400000, guid: 8819390bf5bf97845973562a31cba4e8, type: 2}
+  - {fileID: 11400000, guid: 694856234f95242429dc611782ff160b, type: 2}
+  - {fileID: 11400000, guid: 7eede5796ebb39b4e9d3db197ebd3aea, type: 2}
+  - {fileID: 11400000, guid: 81b2b233e81f6ac4699514bd77e9610e, type: 2}
 --- !u!114 &1675708777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5332,6 +5326,43 @@ MonoBehaviour:
   shield: {fileID: 212761712519020818}
   weapon: {fileID: 4229444270449166602}
   hair: {fileID: 212200309160402172}
+--- !u!58 &2854392704461929106
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109987028385428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.44}
+  serializedVersion: 2
+  m_Radius: 0.7
+--- !u!50 &2950398211560032950
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109987028385428}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 2
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1148429847025930
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DefaultRobe
   m_EditorClassIdentifier: 
   name: Default Robe
+  id: 6
   price: 0
   type: 1
   armL: {fileID: 21300024, guid: 4d91f82d531c4ef4a125910258c8e8f6, type: 3}

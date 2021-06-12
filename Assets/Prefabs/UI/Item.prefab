@@ -301,11 +301,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a3c15db089a9d40818cc30c3edbc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  button: {fileID: 9092558199594142510}
+  icon: {fileID: 6962965891379839427}
   defaultIcon: {fileID: 0}
   defaultIconColor: {r: 0, g: 0, b: 0, a: 0.5882353}
   ShownColor: {r: 1, g: 1, b: 1, a: 1}
-  count: {fileID: 0}
+  count: {fileID: 6963565852429170459}
   selectedFram: {fileID: 7029144911699211884}
   isSelected: 0
 --- !u!114 &5247919970555943873
@@ -378,7 +379,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 5247919970555943873}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []

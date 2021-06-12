@@ -1,9 +1,10 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ItemData", menuName = "ScriptableObjects/New Item", order = 1)]
-public class ItemScriptableObject : ScriptableObject, IItem
+public class ItemScriptableObject : ScriptableObject //, IItem
 {
     public string itemName;
+    public int id;
     public int price;
     public ItemTypeSO type;
     public Sprite sprite;
@@ -19,7 +20,7 @@ public class ItemScriptableObject : ScriptableObject, IItem
     }
     public Sprite GetIcon ()
     {
-        return sprite;
+        return icon;
     }
     public ItemTypeSO GetType ()
     {
