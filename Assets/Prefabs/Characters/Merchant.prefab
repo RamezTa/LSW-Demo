@@ -5625,7 +5625,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 422f5f2ea71549499f154becb259725a, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6170,7 +6170,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 76c39f1b79f94a6093d87b9b386ee91c, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7943,7 +7943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6073c44d26430a87a351b9a430bd08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Character: {fileID: 114665035978887628, guid: d1f4a658d73770d4bb37392a875a403d, type: 3}
+  Character: {fileID: 0}
   Firearm: {fileID: 8293370062714381484}
   Finger: {fileID: 4167376959498266078}
   Slide: {fileID: 4845403248171844}
@@ -7968,7 +7968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9615df837a0e43948b5e4c09b832dbed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Character: {fileID: 114665035978887628, guid: d1f4a658d73770d4bb37392a875a403d, type: 3}
+  Character: {fileID: 0}
   Firearm: {fileID: 8293370062714381484}
   AudioSource: {fileID: 82471844278777738}
   ReloadButtonDown: 0
