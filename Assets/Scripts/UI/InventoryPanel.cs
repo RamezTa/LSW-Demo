@@ -49,7 +49,6 @@ public class InventoryPanel : MonoBehaviour
     [Space]
 
     public AudioClip selectSFX;
-    //public AudioClip cantSelectSFX;
     public AudioClip equipSFX;
     public AudioClip unequipSFX;
 

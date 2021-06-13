@@ -8,6 +8,8 @@ public class ShopPanel : MonoBehaviour
 {
     public static bool IsOpen;
     CanvasGroup canvasGroup;
+    AudioSource audioSource;
+
 
     [SerializeField] PlayerInventory playerInventory;
     [SerializeField] InventoryBage shopkeeperInventory;
@@ -46,10 +48,15 @@ public class ShopPanel : MonoBehaviour
     [SerializeField] Button SellButton;
     [SerializeField] Button BuyButton;
 
-    
+    [Space]
+    public AudioClip selectSFX;
+    public AudioClip cashSFX;
+
+
     void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void ShowShop( InventoryBage shopkeeperInv )
@@ -175,6 +182,8 @@ public class ShopPanel : MonoBehaviour
 
         selectedItem = item;
         selectedItem.SetSelected( true );
+        audioSource.PlayOneShot(selectSFX);
+
 
         itemInfoImage.sprite = ItemsLoader.GetIconOf( item.itemID );
         
@@ -211,6 +220,8 @@ public class ShopPanel : MonoBehaviour
         
         selectedItem.SetSelected(false);
         selectedItem = null;
+        audioSource.PlayOneShot(cashSFX);
+
     }
     public void BuySelected()
     {
@@ -236,6 +247,8 @@ public class ShopPanel : MonoBehaviour
 
         selectedItem.SetSelected(false);
         selectedItem = null;
+        audioSource.PlayOneShot(cashSFX);
+
     }
     IEnumerator ShowNoEnoughGold( float amount )
     {
