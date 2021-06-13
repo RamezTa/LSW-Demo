@@ -65,7 +65,7 @@ public class PlayerInventory : MonoBehaviour
 
             inventory.inventoryOutfits.Remove(outfit);             // remove the outfit from inventory to current 
             if( currentOutfit.id != 6 )                  // 6 is the DefaultRobe don't store it into the inventory
-                inventory.inventoryOutfits.Add(currentOutfit);        // store the currentOufit back to inventory if 
+                inventory.inventoryOutfits.Add(currentOutfit);        // store the currentOufit back to inventory
 
             currentOutfit = outfit;
 
@@ -85,8 +85,8 @@ public class PlayerInventory : MonoBehaviour
 
                     currentShield = item;                               // switch
 
-                    inventoryPanel.SetEquiptedSheild( itemID );
-                    characterCustomization.ChangeSheild( item );
+                    inventoryPanel.SetEquiptedSheild( itemID );         // update the inventory equipted item
+                    characterCustomization.ChangeSheild( item );        // the character customizer
                     break;
 
                 case ItemTypeSO.Weapon:     
@@ -151,6 +151,11 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
+
+    public void AddItem( int itemID )
+    {
+        inventory.AddItem( itemID );
+    }
 
 
     public int GetPlayerGold()

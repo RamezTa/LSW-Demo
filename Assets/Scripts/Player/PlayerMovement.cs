@@ -7,14 +7,13 @@ public class PlayerMovement : MonoBehaviour
     PlayerAnimation playerAnimation;
     AudioSource audioSource;
 
-    [SerializeField] bool isPlayingSFX = false;
-
-
-
     [SerializeField] float movementSpeed;
-
     [SerializeField] Vector3 movementDirection;
 
+    [Space]
+
+    [SerializeField] Transform feetTransform;
+    [SerializeField] Transform dustParticleTransform;
 
     void Awake()
     {
@@ -44,15 +43,16 @@ public class PlayerMovement : MonoBehaviour
             movementSpeed * Time.deltaTime
         );
 
-        if( (H != 0 || V != 0) && isPlayingSFX == false)
-        {
-            audioSource.Play();
-            isPlayingSFX = true;
+        if( (H != 0 || V != 0) )
+        {   
+            if( ! audioSource.isPlaying )
+                audioSource.Play();
+
+            dustParticleTransform.position = feetTransform.position;
         }
-        else if ((H == 0 && V == 0) && isPlayingSFX == true)
+        else if ((H == 0 && V == 0))
         {
             audioSource.Pause();
-            isPlayingSFX = false;
         }
     }
 

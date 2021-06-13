@@ -44,6 +44,7 @@ public class PlayerDetector : MonoBehaviour
         else
         {
             interactableArrow.SetActive( false );
+            currentInteractable = null;
         }
         
     }

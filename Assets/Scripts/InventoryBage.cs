@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
 [System.Serializable]
-public class InventoryBage 
+public class InventoryBage
 {
     public List<OutfitScriptableObject> inventoryOutfits = new List<OutfitScriptableObject>();
     public List<ItemScriptableObject> inventoryItems = new List<ItemScriptableObject>();

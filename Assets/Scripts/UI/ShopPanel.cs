@@ -217,6 +217,8 @@ public class ShopPanel : MonoBehaviour
         UpdateShopkeeperInventoryItems();
 
         ResetInfoPanel();
+
+        SellButton.gameObject.SetActive(false);
         
         selectedItem.SetSelected(false);
         selectedItem = null;
@@ -245,6 +247,8 @@ public class ShopPanel : MonoBehaviour
 
         ResetInfoPanel();
 
+        BuyButton.gameObject.SetActive(false);
+
         selectedItem.SetSelected(false);
         selectedItem = null;
         audioSource.PlayOneShot(cashSFX);
@@ -268,6 +272,6 @@ public class ShopPanel : MonoBehaviour
         SellButton.gameObject.SetActive(false);
         BuyButton.gameObject.SetActive(true);
     }
-    
+
 }
 
