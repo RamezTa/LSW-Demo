@@ -12,6 +12,5 @@ public class DustPosition : MonoBehaviour
     void Update()
     {
         transform.position = foot.position;
-        
     }
 }

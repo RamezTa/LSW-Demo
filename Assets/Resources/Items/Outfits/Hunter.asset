@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Hunter
   id: 7
-  price: 0
+  price: 250
   type: 1
   armL: {fileID: 21300024, guid: c160da3cdabb4baa9db49e93577b5af8, type: 3}
   armR: {fileID: 21300022, guid: c160da3cdabb4baa9db49e93577b5af8, type: 3}

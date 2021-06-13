@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent( typeof( PlayerAnimation ) )]
@@ -9,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerAnimation playerAnimation;
     AudioSource audioSource;
 
-    public bool isPlayingSFX = false;
+    [SerializeField] bool isPlayingSFX = false;
 
 
 
@@ -30,9 +28,14 @@ public class PlayerMovement : MonoBehaviour
         float V = Input.GetAxis("Vertical");
         movementDirection = new Vector3 ( H, V, 0 );
 
+        // don't move if inventory or shop open
+        if( InventoryPanel.IsOpen || ShopPanel.IsOpen ) 
+        {
+            playerAnimation.UpdateAnimation( Vector2.zero );
+            return;
+        }
+        
         playerAnimation.UpdateAnimation( movementDirection );
-
-        playerAnimation.
 
         transform.position = Vector3.Lerp
         (
@@ -41,12 +44,12 @@ public class PlayerMovement : MonoBehaviour
             movementSpeed * Time.deltaTime
         );
 
-        if( (H!=0 || V!=0) && isPlayingSFX== false)
+        if( (H != 0 || V != 0) && isPlayingSFX == false)
         {
             audioSource.Play();
             isPlayingSFX = true;
         }
-        else if ((H == 0 && V == 0)&& isPlayingSFX == true)
+        else if ((H == 0 && V == 0) && isPlayingSFX == true)
         {
             audioSource.Pause();
             isPlayingSFX = false;

@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-public class Interactable : MonoBehaviour, IInteractable
+using UnityEngine.Events;
+public class Interactable : MonoBehaviour
 {
+    [SerializeField] UnityEvent OnInteractedEvent;
     
-    public void SetHighted( bool x )
-    {
-        print("SetHighted:" + x);
-    }
+    public Transform arrowBase;
 
-    public void SetSelected( bool x )
+    public void GetInteracted()
     {
-        print("SetSelected:" + x);
+        OnInteractedEvent.Invoke();
     }
     
 }

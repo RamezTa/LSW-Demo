@@ -8,12 +8,6 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] Transform body;
 
-    void Update()
-    {
-        
-    }
-
-
     public void UpdateAnimation( Vector2 movement )
     {
         UpdateFaceDirection( movement.x );

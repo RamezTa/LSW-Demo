@@ -24,7 +24,7 @@ public class InventoryItem : MonoBehaviour
         selectedFram.SetActive(x);
     }
 
-    public void SetItem( int itemId, bool showPirce = false, int pirce = 0 )
+    public void SetItem( int itemId, bool showPirce = false )
     {
         itemID = itemId;
 
@@ -42,8 +42,12 @@ public class InventoryItem : MonoBehaviour
             icon.color = ShownColor;
         }
 
+
         count.gameObject.SetActive( showPirce );
-        count.text = pirce.ToString();
+        if( showPirce )
+        {
+            count.text = ItemsLoader.GetPriceOf( itemId ).ToString();
+        }
     }
 
 

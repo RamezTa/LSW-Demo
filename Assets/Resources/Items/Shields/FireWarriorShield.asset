@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Fire Warrior Shield
   id: 9
-  price: 0
+  price: 150
   type: 3
   sprite: {fileID: 21300000, guid: 03052a7d809e47688f3bdef4c3c379bc, type: 3}
   icon: {fileID: 21300000, guid: 3a9634b61b804eee86f5384633cbe069, type: 3}

@@ -5,6 +5,8 @@ using System.Collections.Generic;
 [RequireComponent( typeof (CanvasGroup) )]
 public class InventoryPanel : MonoBehaviour
 {
+
+    public static bool IsOpen;
     CanvasGroup canvasGroup;
     AudioSource audioSource;
 
@@ -45,6 +47,7 @@ public class InventoryPanel : MonoBehaviour
 
 
     [Space]
+
     public AudioClip selectSFX;
     //public AudioClip cantSelectSFX;
     public AudioClip equipSFX;
@@ -64,9 +67,12 @@ public class InventoryPanel : MonoBehaviour
 
     public void ShowInventory( bool x )
     {
+        IsOpen = x;
+        
         if( ! x )
         {
             canvasGroup.alpha = 0;
+            canvasGroup.blocksRaycasts = false;
             canvasGroup.interactable = false;
 
             if ( selectedItem != null )
@@ -78,6 +84,7 @@ public class InventoryPanel : MonoBehaviour
         }
 
         canvasGroup.alpha = 1;
+        canvasGroup.blocksRaycasts = true;
         canvasGroup.interactable = true;
 
         Outfit.SetItem( playerInventory.currentOutfit.id );
@@ -90,10 +97,19 @@ public class InventoryPanel : MonoBehaviour
 
     void UpdateInventoryItems()
     {
-        List<int> itemsIDs = playerInventory.GetAllItemsIDs();
+        List<int> itemsIDs = playerInventory.inventory.GetAllItemsIDs();
 
         // match inventoryItems number to player inventory items number
-        if( itemsIDs.Count > inventoryItems.Count )          // needs more inventory items
+        if ( itemsIDs.Count == 0 )                       // if inventory empty
+        {
+            for( int x = 0; x < inventoryItems.Count; x++ )
+            {
+                Destroy( inventoryItems[x].gameObject );    
+            }
+
+            inventoryItems.Clear();
+        }
+        else if( itemsIDs.Count > inventoryItems.Count )          // needs more inventory items
         {
             int delta =  itemsIDs.Count - inventoryItems.Count;
             for( int x = 0; x < delta; x++ )
@@ -114,7 +130,7 @@ public class InventoryPanel : MonoBehaviour
                 inventoryItems.Remove( item );
                 Destroy( item.gameObject );
             }
-        }   
+        }
 
         for( int x = 0; x < inventoryItems.Count; x++ )
         {

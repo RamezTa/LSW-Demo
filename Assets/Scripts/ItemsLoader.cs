@@ -3,10 +3,6 @@ using System.Collections.Generic;
 
 public class ItemsLoader : MonoBehaviour
 {
-    
-    static List<OutfitScriptableObject> outfits = new List<OutfitScriptableObject>();
-    static List<ItemScriptableObject> items = new List<ItemScriptableObject>();
-
     static Dictionary<int, ItemScriptableObject> itemsDic = new Dictionary<int, ItemScriptableObject>();
     static Dictionary<int, OutfitScriptableObject> outfitsDic = new Dictionary<int, OutfitScriptableObject>();
 
@@ -42,7 +38,7 @@ public class ItemsLoader : MonoBehaviour
         }
     }
 
-    // 
+    
     public static ItemTypeSO GetTypeOf( int id )
     {
         // if first call
@@ -103,14 +99,36 @@ public class ItemsLoader : MonoBehaviour
             return "";
         }
     }
+    public static int GetPriceOf( int id )
+    {
+        // if first call
+        if( itemsDic.Count == 0 )
+            LoadAllItems();
 
+        if( itemsDic.ContainsKey( id ) )
+        {
+            return itemsDic[id].price;
+        }
+        else if ( outfitsDic.ContainsKey( id ) )
+        {
+            return outfitsDic[id].price;
+        }
+        else
+        {
+            Debug.LogError("No Item Found with the ID: " + id);
+            return 0;
+        }
+    }
 
+    
     static void LoadAllItems()
     {
+        List<ItemScriptableObject> items = new List<ItemScriptableObject>();
         items.AddRange( Resources.LoadAll<ItemScriptableObject> ( "Items/Hats" ) );
         items.AddRange( Resources.LoadAll<ItemScriptableObject> ( "Items/Shields" ) );
         items.AddRange( Resources.LoadAll<ItemScriptableObject> ( "Items/Weapons" ) );
         
+        List<OutfitScriptableObject> outfits = new List<OutfitScriptableObject>();
         outfits.AddRange( Resources.LoadAll<OutfitScriptableObject> ( "Items/Outfits" ) );
         
         // list items to get by id from dictionary
@@ -148,6 +166,5 @@ public class ItemsLoader : MonoBehaviour
         }
 
     }
-
 
 }
