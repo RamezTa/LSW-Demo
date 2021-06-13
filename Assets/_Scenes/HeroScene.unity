@@ -47169,16 +47169,22 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1605297193541318174, guid: 931482f68f2c30e439b33d3643e396a6, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: 'RAMEZ: I need to make sure that your shop is working perfectly to pass
+        LSW test.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605297193541318174, guid: 931482f68f2c30e439b33d3643e396a6, type: 3}
       propertyPath: sentences.Array.data[5]
-      value: You Can Move using WASD
+      value: 'MERCHANT: Come visit my shopt at the north west of the town. You Can
+        Move using WASD'
       objectReference: {fileID: 0}
     - target: {fileID: 1605297193541318174, guid: 931482f68f2c30e439b33d3643e396a6, type: 3}
       propertyPath: sentences.Array.data[6]
-      value: Inventory using I
+      value: 'MERCHANT: To check your Inventory use I button.'
       objectReference: {fileID: 0}
     - target: {fileID: 1605297193541318174, guid: 931482f68f2c30e439b33d3643e396a6, type: 3}
       propertyPath: sentences.Array.data[7]
-      value: Interact with things using E
+      value: 'MERCHANT: To interact with things using E button.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 931482f68f2c30e439b33d3643e396a6, type: 3}
